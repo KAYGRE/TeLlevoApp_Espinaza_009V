@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"
+       text="back"
+       color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crear Viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">crearviaje</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header class="encabezado">
+      <img src="assets/buscarviaje.svg" class="ion-padding imagen">
+      <ion-card-title style="color:rgb(128, 38, 5); font-weight: bold;">crea tu viaje</ion-card-title>
+    </ion-card-header>
+    <p class="texto">
+      Crea un viaje para ti y tus compañeros, solo tienes que ingresar los datos solicitados y 
+      esperar que alguien acepte tu viaje.
+    </p>
+  </ion-card>
+  <ion-card>
+    <ion-button (click)="Crear()" expand="block" fill="solid" color="warning" shape="round">
+      Crear Viaje
+    </ion-button>
+  </ion-card>
+
+
+</ion-content>

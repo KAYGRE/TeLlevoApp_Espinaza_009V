@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>TeLlevoApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header class="encabezado">
+      <img src="assets/inicio.png" class="ion-padding imagen">
+      <ion-card-subtitle style="color:rgb(232, 109, 109); font-weight: bold;">Bienvenido!</ion-card-subtitle>
+      <ion-card-title style="color:rgb(255, 127, 80); font-weight: bold;">Te llevo ¿?...</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      <p class="texto">
+      Realiza un viaje junto a tus compañeros, solo tienes que organizar el viaje y listo.
+      </p>
+      <p class="texto">
+        indica si tienes transporte para invitar a otros a tu vehiculo o si necesitas transporte 
+        para buscar un vehiculo adecuado para ti.
+      </p>
+      <p class="texto">
+        Recibiras una paga por ofrecer tu vehiculo o deberas pagar una tarifa por el transporte.
+      </p>
+      <ion-button routerLink="/crearviaje" expand="block" fill="solid" color="warning" shape="round">
+        Tengo
+      </ion-button>
+      <ion-button routerLink="/buscarviaje" expand="block" fill="solid" color="warning" shape="round">
+        Necesito
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

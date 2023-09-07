@@ -1,0 +1,25 @@
+.encabezado{
+    background-color: rgb(32, 60, 79);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.contenido{
+    background-color: rgb(32, 60, 79);
+}
+
+.texto{
+    text-align: justify;
+    color:rgb(12, 12, 12);
+    padding: 10%;
+}
+
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.imagen{
+    background-color:rgb(3, 3, 3);
+}
